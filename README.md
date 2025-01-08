@@ -1,3 +1,25 @@
+# Báo cáo môn "Máy học trong bảo mật mạng và hệ thống" - nhóm 22
+
+Nhóm em kính chào **thầy Hùng**, sau đây là hướng dẫn để chạy lại phần tấn công mà nhóm em đã thực hiện:
+
+Đầu tiên, thầy làm theo hướng dẫn của bài báo gốc bên dưới.
+
+Sau khi tấn công nhóm em đã upload weight của student model và generator model lên [link Drive này](https://drive.google.com/drive/folders/1Ag1RicXeqco0X0_1cskxsgzegJxgw5XW?usp=sharing). Gồm 2 file có tên là `cifar10-resnet34_8x.pt` và `cifar10-resnet34_8x-generator.pt`
+
+Thầy tải về và bỏ vào thư mục lần lượt như sau:
+
+`dfme/checkpoint/student_debug/cifar10-resnet34_8x.pt`
+
+`dfme/checkpoint/student_debug/cifar10-resnet34_8x-generator.pt`
+
+Cuối cùng, để chạy lại script tấn công mà nhóm em đã thực hiện, thầy chạy lệnh: `bash nhom_22.sh`
+
+Do giới hạn về phần cứng, nên nhóm em đã điều chỉnh lại thông số khi thực hiện tấn công. Cụ thể là giảm tham số query budget `--query_budget 445` để giảm số epoch.
+
+Em xin cám ơn thầy và chúc thầy có nhiều sức khoẻ.
+
+---
+
 # Data-Free Model Extraction
 
 This repository complements the [Data-Free Model Extraction paper](https://arxiv.org/abs/2011.14779), that will be published at the 2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition.

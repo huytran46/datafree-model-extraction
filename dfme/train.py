@@ -241,7 +241,8 @@ def main():
     args = parser.parse_args()
 
 
-    args.query_budget *=  10**6
+    # args.query_budget *=  10**6
+    args.query_budget *=  10**3
     args.query_budget = int(args.query_budget)
     if args.MAZE:
 
